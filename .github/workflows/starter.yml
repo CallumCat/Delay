@@ -11,6 +11,7 @@ jobs:
       - uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '4.2.x' # SDK Version to use.
+          include-prerelease: True
       - name: Install dependencies
         run: dotnet restore
       - name: Build
